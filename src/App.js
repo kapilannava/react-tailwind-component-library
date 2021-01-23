@@ -1,24 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header'
+import Footer from './components/Footer'
+import Button from './components/Button'
 
-function App() {
+// Button Props
+// children, size, textColor, bgColor, bgHover, className
+
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Header />
+    <Button bgColor="blue">This is a button</Button>
+    <Button bgColor="green">This is a button</Button>
+    <Button bgColor="red" bgHover="default">This is a button</Button>
+    <Footer />
+    </>
   );
 }
 
