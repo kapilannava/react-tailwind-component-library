@@ -21,21 +21,21 @@ function Header(){
 
                 {/* Hidden but flex out on Medium Screens and Larger */}
         <div className="hidden md:flex">
-        <a className="px-2 py-1 text-white semibold rounded hover:bg-gray-700" href="#">
+        <button className="px-2 py-1 text-white semibold rounded hover:bg-gray-700">
                 Home
-            </a>
+            </button>
 
-            <a className="px-2 py-1 text-white semibold rounded hover:bg-gray-700" href="#">
+            <button className="px-2 py-1 text-white semibold rounded hover:bg-gray-700">
                 About
-            </a>
+            </button>
 
-            <a className="px-2 py-1 text-white semibold rounded hover:bg-gray-700" href="#">
+            <button className="px-2 py-1 text-white semibold rounded hover:bg-gray-700">
                 Learn more
-            </a>
+            </button>
 
-            <a className="px-2 py-1 text-white semibold rounded hover:bg-gray-700" href="#">
+            <button className="px-2 py-1 text-white semibold rounded hover:bg-gray-700">
                 New item
-            </a>
+            </button>
         </div>
 
                                 {/*Logo*/}
@@ -49,21 +49,21 @@ function Header(){
         * else div className="hidden"
         */}
         <div className={mobileMenu ? 'px-2 pt-2 pb-4 py-3' : 'hidden'}>
-            <a className="block px-2 py-1 text-white semibold rounded hover:bg-gray-700" href="#">
+            <button className="block px-2 py-1 text-white semibold rounded hover:bg-gray-700" href="#">
                 Home
-            </a>
+            </button>
 
-            <a className="mt-1 block px-2 py-1 text-white semibold rounded hover:bg-gray-700" href="#">
+            <button className="mt-1 block px-2 py-1 text-white semibold rounded hover:bg-gray-700" href="#">
                 About
-            </a>
+            </button>
 
-            <a className="mt-1 block px-2 py-1 text-white semibold rounded hover:bg-gray-700" href="#">
+            <button className="mt-1 block px-2 py-1 text-white semibold rounded hover:bg-gray-700" href="#">
                 Learn more
-            </a>
+            </button>
 
-            <a className="mt-1 block px-2 py-1 text-white semibold rounded hover:bg-gray-700" href="#">
+            <button className="mt-1 block px-2 py-1 text-white semibold rounded hover:bg-gray-700" href="#">
                 Lols
-            </a>
+            </button>
         </div>
 
     </nav>
