@@ -1,15 +1,12 @@
 import React from 'react'
 
-const Section = () => {
+const ReverseSection = () => {
 
 
     return (
         <section className="h-96 grid grid-cols-1 md:grid-cols-2">
-        <div>
-        <img src="https://picsum.photos/600/300" alt="" />
-        </div>
-        <div className="mx-auto px-8">
-        <h1 className="text-4xl pb-4 font-bold">Section #1</h1>
+                <div className="mx-auto px-8">
+        <h1 className="text-4xl pb-4 font-bold">Section #2</h1>
             <p>
             Lorem Ipsum has been the industry's standard dummy
              text ever since the 1500s, when an unknown printer 
@@ -17,8 +14,11 @@ const Section = () => {
               specimen book. 
             </p>
         </div>
+        <div>
+        <img src="https://picsum.photos/600/300" alt="" />
+        </div>
         </section>
     )
 }
 
-export default Section
+export default ReverseSection
