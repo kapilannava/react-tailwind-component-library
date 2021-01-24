@@ -4,7 +4,7 @@ const Section = () => {
 
 
     return (
-        <section className="h-96 grid grid-cols-1 md:grid-cols-2">
+        <section className="h-96 flex flex-col md:flex-row">
         <div>
         <img src="https://picsum.photos/600/300" alt="" />
         </div>
