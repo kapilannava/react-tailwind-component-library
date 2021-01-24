@@ -10,6 +10,11 @@ function Header(){
     <nav className="bg-gray-800">
     <div className="flex items-center justify-between px-4 py-2">
 
+                                {/*Logo*/}
+                                <div>
+                  <img className="h-8" src="https://via.placeholder.com/468x60?text=Visit+Blogging.com+Now" alt="logo" />
+              </div>
+
                 {/* Hide SVG Menu on Medium Screens and Bigger */}
               <div className="flex md:hidden">
               <button onClick={showMenu} className="block text-white hover:text-gray-500 focus:text-white focus:outline-none">
@@ -38,10 +43,6 @@ function Header(){
             </button>
         </div>
 
-                                {/*Logo*/}
-                                <div>
-                  <img className="h-8" src="https://via.placeholder.com/468x60?text=Visit+Blogging.com+Now" alt="logo" />
-              </div>
     </div>
         
         {/* mobileMenu toggle state is set to false
