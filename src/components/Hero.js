@@ -8,8 +8,7 @@ const Hero = () => {
                 Responsive React and Tailwind CSS components.
             </h1>
                 <p className="pt-4 px-16 text-lg">
-                    Reusable React components 
-                    styled with Tailwind CSS
+                    This is the hero section with a button
                 </p>
 
             <button style={{background: "#00aaff"}} className="p-1 w-9/12 md:w-40 mt-4 rounded-md bg-blue-500 text-lg text-white">
