@@ -1,11 +1,11 @@
 import './App.css';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Header from './components/Header'
-import Footer from './components/Footer'
-import Button from './components/Button'
-import Hero from './components/Hero'
-import Section from './components/Section'
-import ReverseSection from './components/ReverseSection'
-import Form from './components/Form'
+import Home from './Home'
+import NavbarPage from './NavbarPage'
+import SectionPage from './SectionPage'
+import FormPage from './FormPage'
+import ButtonPage from './ButtonPage'
 
 // Button Props
 // children, size, textColor, bgColor, bgHover, className
@@ -14,18 +14,17 @@ const App = () => {
 
   return (
     <>
+    <Router>
     <Header /> 
-    <Hero />
-    <div className="md:mt-32" />
-    <Section />
-    <div className="mt-16 md:mt-2" />
-    <ReverseSection />
-    <div className="md:mt-32" />
-    <Form />
-    <Button bgColor="blue">This is a button</Button>
-    <Button bgColor="green">This is a button</Button>
-    <Button bgColor="red" bgHover="default">This is a button</Button>
-    <Footer />
+    <Switch>
+      <Route path="/" exact component={Home} />
+      <Route path="/NavbarPage" exact component={NavbarPage} />
+      <Route path="/SectionPage" exact component={SectionPage} />
+      <Route path="/FormPage" exact component={FormPage} />
+      <Route path="/ButtonPage" exact component={ButtonPage} />
+    </Switch> 
+    </Router>   
+
     </>
   );
 }
