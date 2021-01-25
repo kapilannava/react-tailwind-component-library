@@ -1,11 +1,13 @@
 import React from 'react'
 import Hero from './components/Hero'
+import Footer from './components/Footer'
 
 const Home = () => {
     return (
-        <div>
+            <div className="flex flex-col h-screen justify-between">
             <Hero />
-        </div>
+<Footer />
+</div>
     )
 }
 
