@@ -5,6 +5,7 @@ import Button from './components/Button'
 import Hero from './components/Hero'
 import Section from './components/Section'
 import ReverseSection from './components/ReverseSection'
+import Form from './components/Form'
 
 // Button Props
 // children, size, textColor, bgColor, bgHover, className
@@ -20,6 +21,7 @@ const App = () => {
     <div className="mt-16 md:mt-2" />
     <ReverseSection />
     <div className="md:mt-32" />
+    <Form />
     <Button bgColor="blue">This is a button</Button>
     <Button bgColor="green">This is a button</Button>
     <Button bgColor="red" bgHover="default">This is a button</Button>
