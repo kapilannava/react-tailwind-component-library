@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 function Header(){
 
     const [mobileMenu, setmobileMenu] = useState(false);
@@ -26,12 +26,20 @@ function Header(){
 
                 {/* Hidden but flex out on Medium Screens and Larger */}
         <div className="hidden md:flex">
+        <Link to="/">
         <button className="px-2 py-1 text-white semibold rounded hover:bg-gray-700">
-                Home
+        Home
             </button>
+            </Link>
+
+            <Link to="/NavbarPage">
+        <button className="px-2 py-1 text-white semibold rounded hover:bg-gray-700">
+        NavbarPage
+            </button>
+            </Link>
 
             <button className="px-2 py-1 text-white semibold rounded hover:bg-gray-700">
-                About
+
             </button>
 
             <button className="px-2 py-1 text-white semibold rounded hover:bg-gray-700">
