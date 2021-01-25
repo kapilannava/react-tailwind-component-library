@@ -38,17 +38,23 @@ function Header(){
             </button>
             </Link>
 
-            <button className="px-2 py-1 text-white semibold rounded hover:bg-gray-700">
-
+            <Link to="/SectionPage">
+        <button className="px-2 py-1 text-white semibold rounded hover:bg-gray-700">
+        SectionPage
             </button>
+            </Link>
 
-            <button className="px-2 py-1 text-white semibold rounded hover:bg-gray-700">
-                Learn more
+            <Link to="/FormPage">
+        <button className="px-2 py-1 text-white semibold rounded hover:bg-gray-700">
+        FormPage
             </button>
+            </Link>
 
-            <button className="px-2 py-1 text-white semibold rounded hover:bg-gray-700">
-                New item
+            <Link to="/ButtonPage">
+        <button className="px-2 py-1 text-white semibold rounded hover:bg-gray-700">
+        ButtonPage
             </button>
+            </Link>
         </div>
 
     </div>
