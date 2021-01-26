@@ -22,6 +22,9 @@ const bgColors = {
 
 const bgHoverColor = {
     default: `bg-red-700`,
+    blue: `bg-blue-500`,
+    red: `bg-red-500`,
+    green: `bg-green-500`,
 }
 
 const Button = ({children, size, textColor, bgColor, bgHover, className = ""}) => {
