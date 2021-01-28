@@ -5,7 +5,6 @@ import Button from './components/Button'
 const ButtonPage = () => {
     return (
         <div>
-            These are buttons!
             <div className="py-4"></div>
             <Button bgColor="blue">Button 1</Button>
             <Button bgColor="red">Button 2</Button>
