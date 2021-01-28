@@ -63,7 +63,7 @@ function Header(){
         * If mobileMenu is true, div classname="px-2 pt-2 pb-4 py-3"
         * else div className="hidden"
         */}
-        <div className={mobileMenu ? 'px-2 pt-2 pb-4 py-3' : 'hidden'}>
+        <div className={mobileMenu ? 'md:hidden px-2 pt-2 pb-4 py-3' : 'hidden'}>
             <button className="block px-2 py-1 text-white semibold rounded hover:bg-gray-700" href="#">
                 Home
             </button>
