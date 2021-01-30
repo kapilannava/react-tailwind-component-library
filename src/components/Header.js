@@ -34,25 +34,25 @@ function Header(){
 
             <Link to="/NavbarPage">
         <button className="px-2 py-1 text-white semibold rounded hover:bg-gray-700">
-        NavbarPage
+        Navbars
             </button>
             </Link>
 
             <Link to="/SectionPage">
         <button className="px-2 py-1 text-white semibold rounded hover:bg-gray-700">
-        SectionPage
+        Sections
             </button>
             </Link>
 
             <Link to="/FormPage">
         <button className="px-2 py-1 text-white semibold rounded hover:bg-gray-700">
-        FormPage
+        Forms
             </button>
             </Link>
 
             <Link to="/ButtonPage">
         <button className="px-2 py-1 text-white semibold rounded hover:bg-gray-700">
-        ButtonPage
+        Buttons
             </button>
             </Link>
         </div>
