@@ -3,5 +3,5 @@ A library of website components made with React, that utilize Tailwind CSS class
 
 - Navigation Menu
 - Hero Section
-- Buttons
+- Buttons: bgColor, bgHoverColor, textColor, size
 - Footer
