@@ -5,10 +5,17 @@ const bgColors = {
     default: `bg-gray-800`,
     blue: `bg-blue-500`,
     red: `bg-red-500`,
-    green: `bg-green-500`,
+    green: `bg-green-500`
 }
 
-const Header = ({bgColor}) => {
+const linkPositions = {
+    default: `justify-between`,
+    start: `justify-start`,
+    end: `justify-end`
+}
+ 
+
+const Header = ({bgColor, linkPosition }) => {
 
     const [mobileMenu, setmobileMenu] = useState(false);
     const showMenu = () => setmobileMenu(!mobileMenu)
@@ -18,7 +25,7 @@ const Header = ({bgColor}) => {
 
     return(
     <nav className={`${bgColors[bgColor] || bgColors.default}`}>
-    <div className="flex items-center justify-between px-4 py-2">
+    <div className={`flex items-center ${linkPositions[linkPosition] || linkPositions.default } px-4 py-2`}>
 
                                 {/*Logo*/}
                                 <div>
