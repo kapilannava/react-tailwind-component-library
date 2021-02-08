@@ -1,9 +1,16 @@
 import React from 'react';
 
-const Footer = () => {
+const bgColors = {
+  default: "bg-gray-700",
+  red: "bg-red-700",
+  blue: "bg-blue-700",
+  green: "bg-green-700",
+}
+
+const Footer = ({bgColor}) => {
 
     return (
-        <footer className="bg-blue-900 text-white relative bottom-0 text-center justify-center grid auto-cols-max md:grid-cols-3 grid-cols-1">
+        <footer className={`${bgColors[bgColor] || bgColors.default} text-white relative bottom-0 text-center justify-center grid auto-cols-max md:grid-cols-3 grid-cols-1`}>
   <div>
     <h1 className="text-2xl">
     Footer Column 1

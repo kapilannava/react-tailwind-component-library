@@ -1,8 +1,7 @@
 import React from 'react'
 
+
 const Section = () => {
-
-
     return (
         <section className="h-96 flex flex-col md:flex-row">
         <div>

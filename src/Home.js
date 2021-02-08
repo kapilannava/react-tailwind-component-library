@@ -6,7 +6,7 @@ const Home = () => {
     return (
             <div className="flex flex-col h-screen justify-between">
             <Hero />
-<Footer />
+<Footer bgColor="red" />
 </div>
     )
 }
