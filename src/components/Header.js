@@ -8,6 +8,14 @@ const bgColors = {
     green: `bg-green-500`
 }
 
+const textColors = {
+    default: `text-white`,
+    black: `text-black`,
+    red: `text-red-700`,
+    blue: `text-blue-700`,
+    gren: `text-green-700`
+}
+
 const linkPositions = {
     default: `justify-between`,
     start: `justify-start`,
@@ -15,7 +23,7 @@ const linkPositions = {
 }
  
 
-const Header = ({bgColor, linkPosition }) => {
+const Header = ({bgColor, linkPosition, textColor }) => {
 
     const [mobileMenu, setmobileMenu] = useState(false);
     const showMenu = () => setmobileMenu(!mobileMenu)
@@ -44,31 +52,31 @@ const Header = ({bgColor, linkPosition }) => {
                 {/* Hidden but flex out on Medium Screens and Larger */}
         <div className="hidden md:flex">
         <Link to="/">
-        <button className="px-2 py-1 text-white semibold rounded hover:bg-gray-700">
+        <button className={`px-2 py-1 ${textColors[textColor] || textColors.default } semibold rounded hover:bg-gray-700`}>
         Home
             </button>
             </Link>
 
             <Link to="/NavbarPage">
-        <button className="px-2 py-1 text-white semibold rounded hover:bg-gray-700">
+        <button className={`px-2 py-1 ${textColors[textColor] || textColors.default } semibold rounded hover:bg-gray-700`}>
         Navbars
             </button>
             </Link>
 
             <Link to="/SectionPage">
-        <button className="px-2 py-1 text-white semibold rounded hover:bg-gray-700">
+        <button className={`px-2 py-1 ${textColors[textColor] || textColors.default } semibold rounded hover:bg-gray-700`}>
         Sections
             </button>
             </Link>
 
             <Link to="/FormPage">
-        <button className="px-2 py-1 text-white semibold rounded hover:bg-gray-700">
+        <button className={`px-2 py-1 ${textColors[textColor] || textColors.default } semibold rounded hover:bg-gray-700`}>
         Forms
             </button>
             </Link>
 
             <Link to="/ButtonPage">
-        <button className="px-2 py-1 text-white semibold rounded hover:bg-gray-700">
+        <button className={`px-2 py-1 ${textColors[textColor] || textColors.default } semibold rounded hover:bg-gray-700`}>
         Buttons
             </button>
             </Link>
@@ -81,21 +89,32 @@ const Header = ({bgColor, linkPosition }) => {
         * else div className="hidden"
         */}
         <div className={mobileMenu ? 'md:hidden px-2 pt-2 pb-4 py-3' : 'hidden'}>
-            <button className="block px-2 py-1 text-white semibold rounded hover:bg-gray-700" href="#">
+        <Link to="/">
+            <button className={`block px-2 py-1 ${textColors[textColor] || textColors.default } semibold rounded hover:bg-gray-700" href="#`}>
                 Home
             </button>
+</Link>
 
-            <button className="mt-1 block px-2 py-1 text-white semibold rounded hover:bg-gray-700" href="#">
-                About
+<Link to="/NavbarPage">
+            <button className={`mt-1 block px-2 py-1 ${textColors[textColor] || textColors.default } semibold rounded hover:bg-gray-700" href="#`}>
+                Navbars
             </button>
-
-            <button className="mt-1 block px-2 py-1 text-white semibold rounded hover:bg-gray-700" href="#">
-                Learn more
+</Link>
+            <Link to="/SectionPage">
+            <button className={`mt-1 block px-2 py-1 ${textColors[textColor] || textColors.default } semibold rounded hover:bg-gray-700" href="#`}>
+                Sections
             </button>
-
-            <button className="mt-1 block px-2 py-1 text-white semibold rounded hover:bg-gray-700" href="#">
-                Lols
+            </Link>
+            <Link to="/FormPage">
+            <button className={`mt-1 block px-2 py-1 ${textColors[textColor] || textColors.default } semibold rounded hover:bg-gray-700" href="#`}>
+                Forms
             </button>
+            </Link>
+            <Link to="/ButtonPage">
+            <button className={`mt-1 block px-2 py-1 ${textColors[textColor] || textColors.default } semibold rounded hover:bg-gray-700" href="#`}>
+                Buttons
+            </button>
+            </Link>
         </div>
 
     </nav>
