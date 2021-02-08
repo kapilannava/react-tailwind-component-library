@@ -1,13 +1,23 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-function Header(){
+
+const bgColors = {
+    default: `bg-gray-800`,
+    blue: `bg-blue-500`,
+    red: `bg-red-500`,
+    green: `bg-green-500`,
+}
+
+const Header = ({bgColor}) => {
 
     const [mobileMenu, setmobileMenu] = useState(false);
     const showMenu = () => setmobileMenu(!mobileMenu)
     console.log(mobileMenu);
 
+    
+
     return(
-    <nav className="bg-gray-800">
+    <nav className={`${bgColors[bgColor] || bgColors.default}`}>
     <div className="flex items-center justify-between px-4 py-2">
 
                                 {/*Logo*/}

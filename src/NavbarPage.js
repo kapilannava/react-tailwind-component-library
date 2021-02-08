@@ -5,7 +5,9 @@ const NavbarPage = ()=> {
 
     return (
         <div className="py-48">
-            <Header />
+            <Header bgColor="blue" />
+            <Header bgColor="red" />
+            <Header bgColor="green" />
         </div>
     )
 }
